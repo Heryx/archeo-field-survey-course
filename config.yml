@@ -1,0 +1,16 @@
+title: archeo field survey
+description: corso di Qfield per l'archeologia
+template:
+  repo: archeo-field-survey-template
+  name: archeo-field-survey
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
